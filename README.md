@@ -141,17 +141,17 @@ switch (pointor) {
 
 ##### 4.1.关于`浪`的绘制
 
-> 这里是一个二阶贝塞尔曲线方程（懒得画图了，干说）
+> 这里是一个二阶贝塞尔曲线方程（懒得画图了，就干说）
 
-- 1.先根据矩形的宽确定波的半径：waveRadius
+- 1.先根据矩形的宽确定波的半径：`waveRadius`
 
-- 2.根据矩形的高确定波的运动帧数：waveNum=（width / ((int) waveRadius * 2) + 1）
+- 2.根据矩形的高确定波的运动帧数：`waveNum=（width / ((int) waveRadius * 2) + 1）`
 
 - 3.二阶贝塞尔计算波的轮廓:
 
 - - 这里有2段二阶贝塞尔拼接的（还是整一个图嘛，不过qq截图不能画曲线，手画有点歪）
-  - 正弦sina与X轴交点为3个起始点（2段，每段各2个）
-  - 正弦90度处2个控制点（每段各一个）
+  - 正弦sina与X轴交点为`3个起始点`（2段，每段各2个）
+  - 正弦90度处`2个控制点`（每段各一个）
 - 4.看码（关键变量见注释）
   
 
@@ -181,7 +181,7 @@ path.close();//轨迹闭合
 
 ![demo1](https://github.com/KosmoSakura/XfermodeBar/blob/master/img/ren_no.gif?raw=true)
 
-- 6.加上上面那第三个栗子的蒙版：PorterDuff.Mode.SRC_ATOP
+- 6.加上上面那第三个栗子的蒙版：`PorterDuff.Mode.SRC_ATOP`
 
 ![demo1](https://github.com/KosmoSakura/XfermodeBar/blob/master/img/red.gif?raw=true)
 
